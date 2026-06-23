@@ -1,0 +1,36 @@
+/* External css */
+/* selectors */
+/* universal selector */                                                                                                                                                                                                                                                                                                                                                                                    
+*{
+    color: tomato;
+    width: 200px;
+        height: 200px;
+        border: double;
+        border-radius: 50%;                                                                                                                                    `                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+       
+}
+/* div{    
+    background-color: tomato;
+        width: 200px;
+        height: 200px;
+        border: double;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center; */
+/* } */
+/* #div2{
+    background-color:blueviolet;
+} */
+.divs{
+    background-color:red;
+}
+/* grouping selector */
+/* #div2,div{
+    width: 200px;
+    height: 200px;
+    border-radius:0;
+    border: double;
+    background-color:brown;
+} */
+

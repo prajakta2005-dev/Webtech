@@ -1,0 +1,117 @@
+/* universal selector */
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+#nav1{
+   background-color :rgb(43, 36, 36);
+   height:5vh;
+   /* min-width:3000px; */
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+}
+#head{
+    display:flex;
+    /* justify-content:space-around; */
+    gap: 10px;
+}
+.imgs{
+    height:20px;
+    width:20px;
+    color:rgb(187, 185, 185);
+    
+}
+.imgs1{
+    height:20px;
+    width:20px;
+}
+aside{
+    width:5%;
+    height:95vh;
+     background-color :rgb(61, 54, 54); 
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+#div1{
+    /* border:1px solid red; */
+    height:60%;
+    display:flex;
+    flex-direction:column; 
+    justify-content:space-around;
+    align-items:center;
+}
+#div2{
+    /* border:1px solid yellow; */
+    height:20%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+.para,sup{
+    /* border:1px solid red; */
+    font-size:15px;
+    color:rgb(151, 150, 150);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.arrows{
+    color:rgb(151, 150, 150);
+    display:flex;
+    /* justify-content:space-around; */
+    gap:10px;
+}
+.div3{
+    border-radius: 5px;
+    border:1px solid grey;
+    width:200px;
+}
+.para1{
+    color:rgb(151, 150, 150);
+}
+.div4{
+    display:flex;
+    color:rgb(151, 150, 150);
+    gap:20px;
+}
+.div5{
+    display:flex;
+    /* justify-content:space-between; */
+    gap:20px;
+    color:rgb(151, 150, 150);
+}
+main{
+    display:flex;
+    flex-direction:row;
+
+}
+section{
+    height:95vh; 
+    width:95%;
+    background-color:rgb(12, 10, 10);
+}
+.sectionright{
+
+     color:grey;
+    border:0.5px solid grey;
+}
+.sectionleft{
+    color:grey;
+    border:0.5px solid grey;
+}
+nav{
+     background-color :rgb(44, 42, 42);
+}
+#nav2{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+span{
+    font-size:15px;
+}
