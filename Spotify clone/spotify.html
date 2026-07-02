@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="h-screen overflow-hidden">
+    <nav class="h-[8vh] bg-black flex items-center justify-between px-[20px]">
+      <section class="text-green-600 text-4xl">
+        <i class="fa-brands fa-spotify"></i>
+      </section>
+
+      <section class="flex text-white gap-[20px]">
+        <article
+          class="text-white bg-[#2a2a2a] text-2xl flex justify-center items-center rounded-full w-[50px] h-[50px]"
+        >
+          <i class="fa-solid fa-house"></i>
+        </article>
+
+        <article
+          class="flex bg-[#2a2a2a] h-[6vh] w-[25vw] rounded-[50px] justify-between px-[20px] items-center"
+        >
+          <div><i class="fa-solid fa-magnifying-glass"></i></div>
+
+          <div>
+            <input
+              type="text"
+              class="w-[18vw] outline-none border-r-[1px] border-r-white bg-transparent text-white"
+              placeholder="What do you want to play?"
+            />
+          </div>
+
+          <div><i class="fa-regular fa-window-maximize"></i></div>
+        </article>
+      </section>
+
+      <section class="text-white flex items-center gap-[20px]">
+        <article
+          class="flex items-center gap-[20px] border-r-[1px] border-r-white pr-[20px]"
+        >
+          <div>Premium</div>
+          <div>Support</div>
+          <div>Download</div>
+        </article>
+
+        <article class="flex items-center gap-[20px]">
+          <div><i class="fa-regular fa-circle-down"></i> Install App</div>
+
+          <div>Sign up</div>
+
+          <div>
+            <button
+              class="bg-white text-black rounded-full w-[130px] font-bold h-[6vh]"
+            >
+              Log in
+            </button>
+          </div>
+        </article>
+      </section>
+    </nav>
+
+    <main
+      class="flex justify-between h-[84vh] bg-black items-center px-[10px] py-[5px]"
+    >
+      <aside
+        class="w-[24%] h-full bg-[#121212] rounded-2xl p-2 flex flex-col overflow-hidden"
+      >
+        <!-- Header -->
+        <div class="flex justify-between items-center px-4 py-3">
+          <h2 class="text-white font-bold text-[18px]">Your Library</h2>
+
+          <button
+            class="bg-[#242424] text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm font-semibold hover:bg-[#2d2d2d]"
+          >
+            <i class="fa-solid fa-plus"></i>
+            Create
+          </button>
+        </div>
+
+        <!-- Scroll Area -->
+        <div class="flex-1 overflow-y-auto mt-3 pr-1">
+          <!-- Playlist Card -->
+          <div class="bg-[#242424] rounded-lg p-5 mx-2">
+            <h3 class="text-white font-bold text-[18px]">
+              Create your first playlist
+            </h3>
+
+            <p class="text-gray-300 text-sm mt-2">It's easy, we'll help you</p>
+
+            <button
+              class="bg-white text-black font-bold text-sm rounded-full px-5 py-2 mt-5 hover:scale-105 duration-200"
+            >
+              Create playlist
+            </button>
+          </div>
+
+          <!-- Podcast Card -->
+
+          <div class="bg-[#242424] rounded-lg p-5 mx-2 mt-4">
+            <h3 class="text-white font-bold text-[18px]">
+              Let's find some podcasts to follow
+            </h3>
+
+            <p class="text-gray-300 text-sm mt-2">
+              We'll keep you updated on new episodes.
+            </p>
+
+            <button
+              class="bg-white text-black font-bold text-sm rounded-full px-5 py-2 mt-5 hover:scale-105 duration-200"
+            >
+              Browse podcasts
+            </button>
+          </div>
+
+          <!-- Footer Links -->
+
+          <div
+            class="text-[11px] text-gray-400 flex flex-wrap gap-x-4 gap-y-3 px-4 mt-8"
+          >
+            <a href="#">Legal</a>
+
+            <a href="#">Safety & Privacy Center</a>
+
+            <a href="#">Privacy Policy</a>
+
+            <a href="#">Cookies</a>
+
+            <a href="#">About Ads</a>
+
+            <a href="#">Accessibility</a>
+          </div>
+
+          <div class="px-4 mt-5">
+            <a href="#" class="text-white text-sm font-semibold"> Cookies </a>
+          </div>
+
+          <!-- Language Button -->
+
+          <div class="px-4 mt-8 mb-5">
+            <button
+              class="border border-gray-500 rounded-full text-white px-4 py-2 flex items-center gap-2 text-sm font-semibold hover:border-white"
+            >
+              <i class="fa-solid fa-globe"></i>
+
+              English
+            </button>
+          </div>
+        </div>
+      </aside>
+      <section
+        class="w-[75%] h-full rounded-[20px] bg-[#121212] p-5 overflow-y-auto"
+      >
+        <div class="flex justify-between items-center">
+          <h1 class="text-white text-4xl font-bold">Trending songs</h1>
+
+          <p class="text-white font-semibold">Show all</p>
+        </div>
+        <div class="flex gap-6 mt-6">
+          <div class="w-[170px]">
+            <div class="bg-gray-500 h-[170px] rounded-lg">
+              <img
+                src="https://m.media-amazon.com/images/I/51IZDhcff6L._UXNaN_FMjpg_QL85_.jpg"
+              />
+            </div>
+            <div class="h-6 mt-3 rounded text-white">Toh Phir Aao</div>
+          </div>
+
+          <div class="w-[170px]">
+            <div class="bg-gray-500 h-[170px] rounded-lg">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLMbfqtYGmsiZUoHE1ZTNlPZxiC8DB2Z-ahlL3dfYpBhB3hIh4GDKkGBc&s=10"
+                class="h-[170px]"
+              />
+            </div>
+            <div class="h-6 mt-3 rounded text-white">Inaam (Ft.Badsaah)</div>
+          </div>
+
+          <div class="w-[170px]">
+            <div class="bg-gray-500 h-[170px] rounded-lg">
+              <img
+                src="https://c.saavncdn.com/742/Saree-From-Dhamaal-4-Hindi-2026-20260625175933-500x500.jpg"
+              />
+            </div>
+            <div class="h-6 mt-3 rounded text-white">
+              Saree<br />(From"Dhamaal 4")
+            </div>
+          </div>
+
+          <div class="w-[170px]">
+            <div class="bg-gray-500 h-[170px] rounded-lg">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e025182ea98b2ea623977917597"
+              />
+            </div>
+            <div class="h-6 mt-3 rounded text-white">Shree Hanuman Chalisa</div>
+          </div>
+
+          <div class="w-[170px]">
+            <div class="bg-gray-500 h-[170px] rounded-lg">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS1FvRhQ7lwhYPvFp3Dyty5YFaoAokb41EYkb2v0jWZ1W2UOpkw-fEyHI&s=10"
+                class="h-[170px] w-[170px]"
+              />
+            </div>
+            <div class="h-6 mt-3 rounded text-white">Ban Ja Tu</div>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center mt-16">
+          <h1 class="text-white text-4xl font-bold">Popular artists</h1>
+
+          <p class="text-white font-semibold">Show all</p>
+        </div>
+
+        <div class="flex gap-6 mt-6">
+          <div class="w-[170px]">
+            <div class="bg-gray-500 h-[170px] w-[170px] rounded-full">
+              <img
+                src="https://bookingagentinfo.com/wp-content/uploads/2025/04/ab6761610000e5eb5ba2d75eb08a2d672f9b69b7-1.jpg"
+                class="h-[170px] w-[170px] rounded-full"
+              />
+            </div>
+            <div class="text-white h-6 mt-3 rounded">Arjit Singh</div>
+            <div class="h-4 mt-2 rounded w-[60%] text-white">Artist</div>
+          </div>
+
+          <div class="w-[170px]">
+            <div class="bg-gray-500 h-[170px] w-[170px] rounded-full">
+              <img
+                src="https://i.pinimg.com/736x/1c/c1/11/1cc1116d93a3254595d861446dfae65d.jpg"
+                class="h-[170px] w-[170px] rounded-full"
+              />
+            </div>
+            <div class="text-white h-6 mt-3 rounded">Lata Mangeshkar</div>
+            <div class="h-4 mt-2 rounded w-[60%] text-white">Artist</div>
+          </div>
+
+          <div class="w-[170px]">
+            <div class="bg-gray-500 h-[170px] w-[170px] rounded-full">
+              <img
+                src="https://i.scdn.co/image/ab6761610000e5ebbc959d7569618ec2af2210f5"
+                class="h-[170px] w-[170px] rounded-full"
+              />
+            </div>
+            <div class="text-white h-6 mt-3 rounded">Sonu Nigam</div>
+            <div class="h-4 mt-2 rounded w-[60%] text-white">Artist</div>
+          </div>
+
+          <div class="w-[170px]">
+            <div class="bg-gray-500 h-[170px] w-[170px] rounded-full">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrXtGYeKXaTPFwpBUkIUuMpYqt-1I8GsXakXcNhzKK36eeMNA7sxaLWiNC&s=10"
+                class="h-[170px] w-[170px] rounded-full"
+              />
+            </div>
+            <div class="text-white h-6 mt-3 rounded">Jyotica Tangri</div>
+            <div class="h-4 mt-2 rounded w-[60%] text-white">Artist</div>
+          </div>
+
+          <div class="w-[170px]">
+            <div class="bg-gray-500 h-[170px] w-[170px] rounded-full">
+              <img
+                src="https://i.scdn.co/image/ab6761610000e5ebbb4064bef3a825344d5eb79e"
+                class="h-[170px] w-[170px] rounded-full"
+              />
+            </div>
+            <div class="text-white h-6 mt-3 rounded">Sachin-Jigar</div>
+            <div class="h-4 mt-2 rounded w-[60%] text-white">Artist</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="h-[8vh] flex justify-between items-center p-[10px] bg-white">
+      <p class="w-[55%] text-sm">
+        We and our partners <b>use cookies</b> to personalize your experience,
+        to show you ads based on your interests, and for measurement and
+        analytics purposes. our website and services, use of cookies as
+        described in our <b><u>Cookie Policy.</u></b>
+      </p>
+
+      <p>
+        <i class="fa-solid fa-xmark"></i>
+      </p>
+    </footer>
+  </body>
+</html>
